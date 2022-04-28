@@ -28,7 +28,7 @@ Mijn startniveau is: blauw
   <summary>Eerste digitale schetsen</summary>
 
   ### De eerste versie/schets:
-  <img src="readme-images/digitale-schets" width="375px" alt="eerste versie/schets">
+  <img src="https://github.com/Jobbie20/VIDii/blob/main/readme-images/digitale%20schetsen.PNG" width="375px" alt="eerste versie/schets">
 
 
   ### Je ambitie: 
@@ -54,7 +54,7 @@ Mijn startniveau is: blauw
   feedback punt 1 - "Let goed op hoe je de tijdlijn uiteindelijk in beeld gaat brengen. Ik snap namelijk nog niet gelijk dat dit een timeline is."
 
   #### oplossing:
-  <img src="readme-images/feedback1-1" width="375px" alt="link laten lopen na oplossing puzzel niet gelukt">
+  <img src="..readme-images/feedback" width="375px" alt="link laten lopen na oplossing puzzel niet gelukt">
   Ik heb dit opgelost door elk scherm een eigen achtergrond te geven. Zo zie je steeds dat je verder komt in 'the journey'.
 
 
