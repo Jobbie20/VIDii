@@ -3,17 +3,2469 @@
   box-sizing:border-box;  
 }
 
+/****************
+****settings*****
+*****************/
 html, body {
   height:100%;
   margin:0;
+  overflow: hidden;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'hylia-serif';
+  src: url('../fonts/hyliaserifbeta-regular-webfont.woff') format('woff');
+  font-weight: lighter;
+  font-style: normal;
 }
 
 button:not([disabled]) {
   cursor:pointer;
 }
 
-/* jouw CSS vanaf hier */
-
 h1 {
-  color:crimson;
+  font-family:'hylia-serif';
+  font-size: 3.75em;
+  text-align: center;
+  display: inline-block;
+  height: 10%;
 }
+
+
+
+article {
+  text-align: center;
+}
+
+header { 
+  display:grid;
+  justify-items: center;
+}
+
+
+main { 
+  height: 1200vh
+}
+
+
+
+
+
+/****************************************
+****alle achtergronden van de levels*****
+****************************************/
+#section-grass {
+  position:relative;
+  display: grid;
+  height:100vh;
+  background-image:url("../images/background-grass.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.section-donker {
+  position:relative;
+  display: grid;
+  height:100vh;
+  background-image:url("../images/background-donker.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#section-donker-1 {
+  position:relative;
+  display: grid;
+  height:100vh;
+  background-image:url("../images/background-donker.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#section-level-2-background {
+  position:relative;
+  display: grid;
+  height:100vh;
+  background-image:url("../images/level-2-background.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#section-donker-3 {
+  position:relative;
+  display: grid;
+  height:100vh;
+  background-image:url("../images/background-donker.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#section-licht-4 {
+  position:relative;
+  display: grid;
+  height:100vh;
+  background-image:url("../images/background-licht.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#section-donker-5 {
+  position:relative;
+  display: grid;
+  height:100vh;
+  background-image:url("../images/background-donker.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#section-level-6-background {
+  position:relative;
+  display: grid;
+  height:100vh;
+  background-image:url("../images/level-6-background.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#section-donker-7 {
+  position:relative;
+  display: grid;
+  height:100vh;
+  background-image:url("../images/background-donker.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#section-licht-8 {
+  position:relative;
+  display: grid;
+  height:100vh;
+  background-image:url("../images/background-licht.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#section-donker-9 {
+  position:relative;
+  display: grid;
+  height:100vh;
+  background-image:url("../images/level-9-background.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#section-licht-10 {
+  position:relative;
+  display: grid;
+  height:100vh;
+  background-image:url("../images/level-10-background.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#section-donker-11 {
+  position:relative;
+  display: grid;
+  height:100vh;
+  background-image:url("../images/level-11-background.png");
+  background-size: cover;
+  background-position: center;
+}
+
+section img {
+  justify-self: center;
+}
+
+
+
+
+
+/***************
+****alle deuren*****
+***************/
+.gate-licht-up { 
+  position: absolute;
+  justify-self: center;
+  width: 8.75em;
+  bottom:0;
+}
+
+.gate-licht-down { 
+  position: absolute;
+  width: 8.75em;
+  justify-self: center;
+  top: 0;
+}
+
+.gate-donker-up { 
+  position: absolute;
+  justify-self: center;
+  width: 8.75em;
+  bottom:0;
+}
+
+.gate-donker-down { 
+  position: absolute;
+  width: 8.75em;
+  justify-self: center;
+  top: 0;
+}
+
+.gate-licht-up-dicht { 
+  position: absolute;
+  justify-self: center;
+  width: 8.75em;
+  bottom:0;
+}
+
+
+
+
+
+/***************
+****home*****
+***************/
+.home-bloemetjes{ 
+  position: absolute;
+  bottom:3em;
+  width: 70.125em;
+}
+
+.home-link { 
+  position: absolute;
+  bottom: 7em;
+  width: 6.5em;
+}
+
+.home-logo { 
+  position: absolute;
+  width: 12em;
+  top: 3.5em;
+}
+
+p { 
+  position: absolute;
+  font-family:'hylia-serif';
+  font-size: 1em;
+  color: white;
+  bottom: 1.2em;
+  font-weight: lighter;
+  padding-left: 4.3em;
+  padding-right: 4.3em;
+
+}
+
+h2 { 
+  position: absolute;
+  font-family:'hylia-serif';
+  font-size: 1.5em;
+  font-weight: lighter;
+  
+}
+
+.kop { 
+  top: 0em;
+  padding-left: 3em;
+  padding-right: 3em;
+  color: white;
+}
+
+.start { 
+  font-weight:bold;
+  bottom: .5em;
+  right: 25em;
+  color: black;
+}
+
+
+
+
+
+/***************
+****level 1*****
+***************/
+.level-1-link { 
+  width: 6.5em;
+} 
+
+/* button link */
+.level-1-button { 
+  position: absolute;
+  top: 10em;
+  right: 54.5em;
+  width: 6.5em;
+  background: none;
+  background-color: none;
+  border: 0;
+}
+
+.level-1-button.lopen { 
+  pointer-events: all;
+  animation-name: loop2;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+}
+
+@keyframes loop2 { 
+  0% { 
+    transform: translatex(0em) translatey(0em);
+  }
+  33% { 
+    transform: translatex(0em) translatey(15em);
+  } 
+  85% { 
+    transform: translatex(39em) translatey(15em);
+  } 
+  100% { 
+    transform: translatex(39em) translatey(30em);
+  }
+}
+
+/* vuurtjes */
+.level-1-vuur {
+  position: absolute; 
+  width:3.4em;
+  right: 30.7em;
+  bottom: 1em;
+  transition-duration: .2s;
+}
+
+.level-1-vuur.onzichtbaar { 
+  opacity: 0;
+}
+
+.level-1-vuur-2 { 
+  position: absolute;
+  bottom: 6em;
+  right: 30.7em;
+}
+
+.level-1-vuur-3 { 
+  position: absolute;
+  bottom: 11em;
+  right: 30.7em;
+}
+
+.level-1-vuur-4 { 
+  position: absolute;
+  bottom: 16em;
+  right: 30.7em;
+}
+
+.level-1-vuur-5 { 
+  position: absolute;
+  bottom: 16em;
+  right: 25.7em;
+}
+
+.level-1-vuur-6 { 
+  position: absolute;
+  bottom: 16em;
+  right: 20.7em;
+}
+
+.level-1-vuur-7 { 
+  position: absolute;
+  bottom: 16em;
+  right: 15.7em;
+}
+
+.level-1-vuur-8 { 
+  position: absolute;
+  bottom: 16em;
+  right: 10.7em;
+}
+
+.level-1-vuur-9 { 
+  position: absolute;
+  bottom: 16em;
+  right: 5.7em;
+}
+
+.level-1-vuur-10 { 
+  position: absolute;
+  bottom: 16em;
+  right: 0.7em;
+}
+
+/* button lever */
+.level-1-lever {
+  width: 3.3em;
+} 
+
+.button-lever {
+  position: absolute;
+  bottom: 29.3em;
+  right: 16.3em;
+  width: 1em;
+  background: none;
+  background-color: none;
+  border: 0;
+}
+
+
+.gate-licht-up-1 { 
+  right: 5.3em;
+}
+
+/* buttons uitleg */
+.home-uitleg-1 { 
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: .5em solid green;
+  border-radius: .5em;
+  box-shadow: inset 0 0 10px white;
+  width: 30em;
+  height: 25em;
+  left: 15em;
+  bottom: 14.5em;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.home-uitleg-1.aan { 
+  opacity: 1;
+}
+
+.home-uitleg-2 { 
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: .5em solid green;
+  border-radius: .5em;
+  box-shadow: inset 0 0 10px white;
+  width: 30em;
+  height: 25em;
+  left: 15em;
+  bottom: 5em;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.home-uitleg-2.aan { 
+  opacity: 1;
+}
+
+.home-uitleg-knop-1 { 
+  position: absolute;
+  display: grid;
+  width:9em;
+  height:9em;
+  background-image:url("../images/link-1.png");
+  background-size: cover; 
+  background-color: black;
+  box-shadow: inset 0 0 30px black;
+  border-radius: 50%;
+  border: 0em;
+  top: 16.5em;
+  left: 6em;
+}
+
+.home-uitleg-knop-2 { 
+  position: absolute;
+  display: grid;
+  width:9em;
+  height:9em;
+  background-image:url("../images/level-1-vuur.png");
+  background-size: cover;
+  background-color: black;
+  box-shadow: inset 0 0 30px black;
+  border-radius: 50%;
+  border: 0em;
+  bottom: 16.5em;
+  left: 6em;
+}
+
+
+
+
+
+/***************
+****level 2*****
+***************/
+/* gates */
+.gate-donker-down-2 { 
+  right: 5.3em;
+}
+
+.gate-donker-up-2 { 
+  left: 11.4em; 
+  /* pointer-events: none; */
+}
+
+.gate-donker-up-2.aan { 
+  pointer-events: all;
+}
+
+/* button link */
+.level-2-button { 
+  position: absolute;
+  top: 10em;
+  right:16em;
+  width: 3.125em;
+  pointer-events: none;
+  background: none;
+  background-color: none;
+  border: 0;
+}
+
+.level-2-button.aan { 
+  pointer-events: all;
+  animation-duration: 4s;
+}
+
+.level-2-button.lopen { 
+  pointer-events: all;
+  animation-name: loop;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+}
+
+@keyframes loop { 
+  0% { 
+    transform: translatex(0em) translatey(0em);
+
+  }
+  33% { 
+    transform: translatex(0em) translatey(10em);
+  } 
+  85% { 
+    transform: translatex(-63.8em) translatey(10em);
+  } 
+  100% { 
+    transform: translatex(-63.8em) translatey(30em);
+  }
+}
+
+.level-2-link { 
+  width: 3.125em;
+}
+
+/* Button blokkade */
+.level-2-button2 { 
+  position: absolute;
+  top: 12.8em;
+  left:26em;
+  width: 0.5em;
+  background: none;
+  background-color: none;
+  border: 0;
+}
+
+.level-2-button2.naar-beneden { 
+  transition-duration: 2s;
+  transform: translateY(17em);
+}
+
+.level-2-blokkade{ 
+  width: 12.5em;
+}
+
+/* buttons uitleg */
+.level-2-image { 
+  position: absolute;
+  width: 15em;
+  top: 4em;
+}
+
+.level-2-image2 { 
+  position: absolute;
+  width: 5em;
+  top: 4em;
+}
+
+.level-2-uitleg-1 { 
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: .5em solid green;
+  border-radius: .5em;
+  box-shadow: inset 0 0 10px white;
+  width: 30em;
+  height: 25em;
+  left: 15em;
+  bottom: 14.5em;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.level-2-uitleg-1.aan { 
+  opacity: 1;
+}
+
+.level-2-uitleg-2 { 
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: .5em solid green;
+  border-radius: .5em;
+  box-shadow: inset 0 0 10px white;
+  width: 30em;
+  height: 25em;
+  left: 15em;
+  bottom: 5em;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.level-2-uitleg-2.aan { 
+  opacity: 1;
+}
+
+.level-2-uitleg-knop-1 { 
+  position: absolute;
+  display: grid;
+  width:9em;
+  height:9em;
+  background-image:url("../images/link-2.png");
+  background-size: cover; 
+  background-color: black;
+  box-shadow: inset 0 0 30px black;
+  border-radius: 50%;
+  border: 0em;
+  top: 16.5em;
+  left: 6em;
+}
+
+.level-2-uitleg-knop-2 { 
+  position: absolute;
+  display: grid;
+  width:9em;
+  height:9em;
+  background-image:url("../images/grote\ blokkade.png");
+  background-size: cover;
+  background-color: black;
+  box-shadow: inset 0 0 30px black;
+  border-radius: 50%;
+  border: 0em;
+  bottom: 16.5em;
+  left: 6em;
+}
+
+
+
+
+
+/***************
+****level 3*****
+***************/
+/* gates */
+.gate-licht-down-3 {
+  left: 11.4em;
+}
+
+/* button link */
+.level-3-link { 
+  width: 7.5em; 
+}
+
+.level-3-button2 { 
+  position: absolute;
+  top: 8em;
+  left: 28.4em;
+  width: 3.125em;
+  pointer-events: none;
+  background: none;
+  background-color: none;
+  border: 0;
+}
+
+.level-3-button2.aan { 
+  pointer-events: all;
+  animation-duration: 4s;
+}
+
+.level-3-button2.lopen { 
+  pointer-events: all;
+  animation-name: loop3;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+}
+
+@keyframes loop3 { 
+  0% { 
+    transform: translatex(0em) translatey(0em);
+  }
+  33% { 
+    transform: translatex(0em) translatey(20em);
+  } 
+  66% { 
+    transform: translatex(24.5em) translatey(20em);
+  } 
+  100% { 
+    transform: translatex(24.5em) translatey(30em);
+  }
+}
+
+/* button chest */
+.level-3-button { 
+  position: absolute;
+  width: 0.5em;
+  background: none;
+  background-color: none;
+  border: 0;
+  top: 20em;
+  right:62.5em;
+  transition: .5s;
+}
+
+.level-3-button.fade-out { 
+  opacity: 0;
+}
+
+.level-3-kist { 
+  position: absolute;
+  width: 10.8em;
+}
+
+.level-3-kist-open { 
+  position: absolute;
+  top: 28.3%;
+  width: 12em;
+  opacity: 0;
+  right:41.5em;
+  pointer-events: none;
+  transition: .5s;
+  
+}
+
+.level-3-kist-open.fade-in { 
+  opacity: 1;
+}
+
+.level-3-bow { 
+  position: absolute;
+  top: 18.7em;
+  right: 46.3em;
+  width: 3.5em;
+  opacity: 0;
+  pointer-events: none;
+  transition: 
+    opacity .5s, 
+    transform .5s .5s;
+}
+
+.level-3-bow.eruit { 
+  opacity: 1;
+  transform: translateY(-11em);
+}
+
+/* buttons uitleg */
+
+.level-3-uitleg-1 { 
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: .5em solid green;
+  border-radius: .5em;
+  box-shadow: inset 0 0 10px white;
+  width: 30em;
+  height: 25em;
+  left: 15em;
+  bottom: 14.5em;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.level-3-uitleg-1.aan { 
+  opacity: 1;
+}
+
+.level-3-uitleg-2 { 
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: .5em solid green;
+  border-radius: .5em;
+  box-shadow: inset 0 0 10px white;
+  width: 30em;
+  height: 25em;
+  left: 15em;
+  bottom: 5em;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.level-3-uitleg-2.aan { 
+  opacity: 1;
+}
+
+.level-3-uitleg-knop-1 { 
+  position: absolute;
+  display: grid;
+  width:9em;
+  height:9em;
+  background-image:url("../images/link-3.png");
+  background-size: cover; 
+  background-color: black;
+  box-shadow: inset 0 0 30px black;
+  border-radius: 50%;
+  border: 0em;
+  top: 16.5em;
+  left: 6em;
+}
+
+.level-3-uitleg-knop-2 { 
+  position: absolute;
+  display: grid;
+  width:9em;
+  height:9em;
+  background-image:url("../images/level\ 3-kist.png");
+  background-size: cover;
+  background-color: black;
+  box-shadow: inset 0 0 30px black;
+  border-radius: 50%;
+  border: 0em;
+  bottom: 16.5em;
+  left: 6em;
+}
+
+
+
+
+
+/***************
+****level 4*****
+***************/
+/* button link */
+.level-4-link { 
+  position: absolute;
+  width: 5em;
+}
+
+.level-4-button2 { 
+  position: absolute;
+  top: 10em;
+  right: 57.7em;
+  width: 3.125em;
+  pointer-events: none;
+  background: none;
+  background-color: none;
+  border: 0;
+}
+
+.level-4-button2.aan { 
+  pointer-events: all;
+  animation-duration: 4s;
+}
+
+.level-4-button2.lopen { 
+  pointer-events: all;
+  transition-duration: 2s;
+  transform: translateY(30em);
+}
+
+/* button boog */
+.level-4-button { 
+  position: absolute;
+  width: 0.5em;
+  background: none;
+  background-color: none;
+  border: 0;
+  top: 14em;
+  right:55.5em;
+}
+
+
+.level-4-bow { 
+  width: 3.2em;
+}
+
+
+.level-4-enemy { 
+  position: absolute;
+  bottom: 10em;
+  width: 6.875em;
+  transition: .5s;
+}
+
+.level-4-enemy.defeated { 
+  animation-name: disappear;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+}
+
+@keyframes disappear { 
+  0% { 
+    opacity: 1;
+  }
+  75% { 
+    opacity: 1;
+  } 
+  100% { 
+    opacity: 0;
+  }
+}
+
+.level-4-arrow { 
+  position: absolute;
+  top: 10em;
+  width: 1.7em;
+}
+
+.level-4-arrow.fly { 
+  animation-name: shoot;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+}
+
+@keyframes shoot { 
+  0% { 
+    transform: translatey(0em);
+  }
+  75% { 
+    transform: translatey(13em);
+    opacity: 1;
+  
+  } 
+  100% { 
+    transform: translatey(13em);
+    opacity: 0;
+  }
+}
+
+/* buttons uitleg */
+.level-4-image2 { 
+  position: absolute;
+  width: 5em;
+  top: 2em;
+}
+
+.level-4-uitleg-1 { 
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: .5em solid green;
+  border-radius: .5em;
+  box-shadow: inset 0 0 10px white;
+  width: 30em;
+  height: 25em;
+  left: 15em;
+  bottom: 14.5em;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.level-4-uitleg-1.aan { 
+  opacity: 1;
+}
+
+.level-4-uitleg-2 { 
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: .5em solid green;
+  border-radius: .5em;
+  box-shadow: inset 0 0 10px white;
+  width: 30em;
+  height: 25em;
+  left: 15em;
+  bottom: 5em;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.level-4-uitleg-2.aan { 
+  opacity: 1;
+}
+
+.level-4-uitleg-knop-1 { 
+  position: absolute;
+  display: grid;
+  width:9em;
+  height:9em;
+  background-image:url("../images/link-4.png");
+  background-size: cover; 
+  background-color: black;
+  box-shadow: inset 0 0 30px black;
+  border-radius: 50%;
+  border: 0em;
+  top: 16.5em;
+  left: 6em;
+}
+
+.level-4-uitleg-knop-2 { 
+  position: absolute;
+  display: grid;
+  width:9em;
+  height:9em;
+  background-image:url("../images/level-4-spearenemy.png");
+  background-size: cover;
+  background-color: black;
+  box-shadow: inset 0 0 30px black;
+  border-radius: 50%;
+  border: 0em;
+  bottom: 16.5em;
+  left: 6em;
+}
+
+
+
+/***************
+****level 5*****
+***************/
+/* button link */
+.level-5-link { 
+  width: 4em;
+}
+
+.level-5-button3 { 
+  position: absolute;
+  top: 8em;
+  right: 54.7em;
+  pointer-events: none;
+  background: none;
+  background-color: none;
+  border: 0;
+}
+
+.level-5-button3.aan { 
+  pointer-events: all;
+  animation-duration: 4s;
+}
+
+.level-5-button3.lopen { 
+  pointer-events: all;
+  animation-name: loop5;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+}
+
+@keyframes loop5 { 
+  0% { 
+    transform: translatex(0em) translatey(0em);
+  }
+  25% { 
+    transform: translatex(15em) translatey(0em);
+  } 
+  50% { 
+    transform: translatex(15em) translatey(20em);
+  } 
+  75% { 
+    transform: translatex(0em) translatey(20em);
+  } 
+  100% { 
+    transform: translatex(0em) translatey(30em);
+  }
+}
+
+
+
+.level-5-button { 
+  position: absolute;
+  width: 0.5em;
+  background: none;
+  background-color: none;
+  border: 0;
+  top: 20em;
+  right:62.5em;
+  transition: .5s;
+}
+
+.level-5-button.fade-out { 
+  opacity: 0;
+}
+
+.level-5-kist { 
+  position: absolute;
+  width: 10.8em;
+}
+
+.level-5-kist-open { 
+  position: absolute;
+  top: 28.3%;
+  width: 12em;
+  opacity: 0;
+  right:41.5em;
+  pointer-events: none;
+  transition: .5s;
+  
+}
+
+.level-5-kist-open.fade-in { 
+  opacity: 1;
+}
+
+.gate-licht-up-dicht-1 { 
+  position: absolute;
+  justify-self: center;
+  width: 8.75em;
+  bottom:0;
+  pointer-events: none;
+  transition-duration: .5s;
+}
+
+.gate-licht-up-dicht-1.fade-out { 
+  opacity: 0;
+  pointer-events: none;
+}
+
+.gate-licht-up-12 { 
+  position: absolute;
+  justify-self: center;
+  width: 8.75em;
+  bottom:0;
+  opacity: 0;
+  pointer-events: none;
+  transition-duration: .5s;
+}
+
+.gate-licht-up-12.fade-in { 
+  opacity: 1;
+  pointer-events: all;
+}
+
+.level-5-key { 
+  width: 3.5em;
+}
+
+.level-5-button2 { 
+  position: absolute;
+  top: 18.7em;
+  right: 56em;
+  width: 3.5em;
+  opacity: 0;
+  pointer-events: none;
+  background: none;
+  background-color: none;
+  border: 0;
+  transition: 
+    opacity .5s, 
+    transform .5s .5s;
+}
+
+.level-5-button2.eruit { 
+  pointer-events: all;
+  opacity: 1;
+  transform: translateY(-11em);
+}
+
+.level-5-button2.fade-out {
+  opacity:0;
+  pointer-events: none;
+}
+
+/* buttons uitleg */
+.level-5-image2 { 
+  position: absolute;
+  width: 5em;
+  top: 2em;
+}
+
+.level-5-uitleg-1 { 
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: .5em solid green;
+  border-radius: .5em;
+  box-shadow: inset 0 0 10px white;
+  width: 30em;
+  height: 25em;
+  left: 15em;
+  bottom: 14.5em;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.level-5-uitleg-1.aan { 
+  opacity: 1;
+}
+
+.level-5-uitleg-2 { 
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: .5em solid green;
+  border-radius: .5em;
+  box-shadow: inset 0 0 10px white;
+  width: 30em;
+  height: 25em;
+  left: 15em;
+  bottom: 5em;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.level-5-uitleg-2.aan { 
+  opacity: 1;
+}
+
+.level-5-uitleg-knop-1 { 
+  position: absolute;
+  display: grid;
+  width:9em;
+  height:9em;
+  background-image:url("../images/link-5.png");
+  background-size: cover; 
+  background-color: black;
+  box-shadow: inset 0 0 30px black;
+  border-radius: 50%;
+  border: 0em;
+  top: 16.5em;
+  left: 6em;
+}
+
+.level-5-uitleg-knop-2 { 
+  position: absolute;
+  display: grid;
+  width:9em;
+  height:9em;
+  background-image:url("../images/level\ 3-kist.png");
+  background-size: cover;
+  background-color: black;
+  box-shadow: inset 0 0 30px black;
+  border-radius: 50%;
+  border: 0em;
+  bottom: 16.5em;
+  left: 6em;
+}
+
+
+
+
+/***************
+****level 6*****
+***************/
+.gate-donker-up-6 {
+  left: 4.1em;
+}
+
+/* button link */
+.level-6-link {
+  position: absolute;
+}
+.level-6-button3 { 
+  position: absolute;
+  top: 8em;
+  right: 58.5em;
+  pointer-events: none;
+  background: none;
+  background-color: none;
+  border: 0;
+}
+
+.level-6-button3.aan { 
+  pointer-events: all;
+  animation-duration: 4s;
+}
+
+.level-6-button3.lopen { 
+  pointer-events: all;
+  animation-name: loop6;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+}
+
+@keyframes loop6 { 
+  0% { 
+    transform: translatex(0em) translatey(0em);
+  }
+  33% { 
+    transform: translatex(0em) translatey(27em);
+  } 
+  66% { 
+    transform: translatex(-42em) translatey(27em);
+  } 
+  100% { 
+    transform: translatex(-42em) translatey(30em);
+  }
+}
+
+/* button bombs */
+.level-6-button { 
+  position: absolute;
+  width: 11.25em;
+  top: 15.5em;
+  right: 51.3em;
+  background: none;
+  background-color: none;
+  border: 0;
+  transition-duration: 1s;
+}
+
+.level-6-button.fade-out { 
+  opacity: 0;
+}
+
+.level-6-button2 { 
+  position: absolute;
+  bottom: 8.6em;
+  left: 33.5em;
+  background: none;
+  background-color: none;
+  border: 0;
+  transition-duration: 1s;
+}
+
+.level-6-button2.fade-out { 
+  opacity: 0;
+}
+
+.level-6-bomb {
+  width: 11.25em;
+}
+
+.level-6-bomb-1 {
+  width: 11.25em;
+}
+
+.level-6-explodingbomb {
+  position: absolute;
+  width: 9.5em;
+  top: 13em;
+  right: 42.3em;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.level-6-explodingbomb.boem {
+  animation-name: boem;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+}
+
+@keyframes boem { 
+  0% { 
+    opacity: 1;
+  }
+  90% { 
+    opacity: 1;
+  } 
+  100% { 
+    opacity: 0;
+  }
+}
+
+.level-6-explodingbomb-2 {
+  position: absolute;
+  width: 9.5em;
+  bottom: 7.4em;
+  left: 28.2em;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.level-6-explodingbomb-2.boem {
+  animation-name: boem2;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+}
+
+@keyframes boem2 { 
+  0% { 
+    opacity: 1;
+  }
+  90% { 
+    opacity: 1;
+  } 
+  100% { 
+    opacity: 0;
+  }
+}
+
+.level-6-bombable-wall {
+  position: absolute;
+  bottom: 20.7em;
+  width: 3.8em;
+}
+
+.level-6-bombable-wall-1 {
+  left: 40.7em;
+}
+
+.level-6-bombable-wall-2 {
+  left: 45.7em;
+}
+
+.level-6-bombable-wall-2.kapot {
+  animation-name: kapot;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+}
+
+@keyframes kapot { 
+  0% { 
+    opacity: 1;
+  }
+  90% { 
+    opacity: 1;
+  } 
+  100% { 
+    opacity: 0;
+  }
+}
+
+.level-6-bombable-wall-3 {
+  left: 50.7em;
+}
+
+.level-6-bombable-wall2 {
+  position: absolute;
+  left: 25.6em;
+  width: 3.8em;
+}
+
+.level-6-bombable-wall-4 {
+  bottom: 10.6em;
+}
+
+.level-6-bombable-wall-4.kapot {
+  animation-name: kapot2;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+}
+
+@keyframes kapot2 { 
+  0% { 
+    opacity: 1;
+  }
+  90% { 
+    opacity: 1;
+  } 
+  100% { 
+    opacity: 0;
+  }
+}
+
+.level-6-bombable-wall-5 {
+  bottom: 5.7em;
+}
+
+/* buttons uitleg */
+.level-6-image { 
+  position: absolute;
+  width: 5em;
+  top: 2em;
+}
+
+.level-6-uitleg-1 { 
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: .5em solid green;
+  border-radius: .5em;
+  box-shadow: inset 0 0 10px white;
+  width: 30em;
+  height: 25em;
+  left: 15em;
+  bottom: 14.5em;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.level-6-uitleg-1.aan { 
+  opacity: 1;
+}
+
+.level-6-uitleg-2 { 
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: .5em solid green;
+  border-radius: .5em;
+  box-shadow: inset 0 0 10px white;
+  width: 30em;
+  height: 25em;
+  left: 15em;
+  bottom: 5em;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.level-6-uitleg-2.aan { 
+  opacity: 1;
+}
+
+.level-6-uitleg-knop-1 { 
+  position: absolute;
+  display: grid;
+  width:9em;
+  height:9em;
+  background-image:url("../images/link-6.png");
+  background-size: cover; 
+  background-color: black;
+  box-shadow: inset 0 0 30px black;
+  border-radius: 50%;
+  border: 0em;
+  top: 16.5em;
+  left: 6em;
+}
+
+.level-6-uitleg-knop-2 { 
+  position: absolute;
+  display: grid;
+  width:9em;
+  height:9em;
+  background-image:url("../images/level-6-bomb.png");
+  background-size: cover;
+  background-color: black;
+  box-shadow: inset 0 0 30px black;
+  border-radius: 50%;
+  border: 0em;
+  bottom: 16.5em;
+  left: 6em;
+}
+
+
+
+
+
+
+/***************
+****level 7*****
+***************/
+.gate-licht-down-7 {
+  left: 4.1em;
+}
+
+/* button link */
+.level-7-link {
+  position: absolute;
+  width: 6.5em;
+
+}
+
+.level-7-button2 { 
+  position: absolute;
+  top: 8em;
+  left: 11.5em;
+  pointer-events: none;
+  background: none;
+  background-color: none;
+  border: 0;
+}
+
+.level-7-button2.aan { 
+  pointer-events: all;
+  animation-duration: 4s;
+}
+
+.level-7-button2.lopen { 
+  pointer-events: all;
+  animation-name: loop7;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+}
+
+@keyframes loop7 { 
+  0% { 
+    transform: translatex(0em) translatey(0em);
+  }
+  33% { 
+    transform: translatex(0em) translatey(27em);
+  } 
+  66% { 
+    transform: translatex(42em) translatey(27em);
+  } 
+  100% { 
+    transform: translatex(42em) translatey(32em);
+  }
+}
+
+.level-7-button { 
+  position: absolute;
+  width: 0.5em;
+  background: none;
+  background-color: none;
+  border: 0;
+  top: 20em;
+  right:62.5em;
+  transition: .5s;
+}
+
+.level-7-button.fade-out { 
+  opacity: 0;
+}
+
+.level-7-kist { 
+  position: absolute;
+  width: 10.8em;
+}
+
+.level-7-kist-open { 
+  position: absolute;
+  top: 28.3%;
+  width: 12em;
+  opacity: 0;
+  right:41.5em;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.level-7-kist-open.fade-in { 
+  opacity: 1;
+}
+
+.level-7-waterrod { 
+  position: absolute;
+  top: 18.7em;
+  right: 46.3em;
+  width: 3.5em;
+  opacity: 0;
+  pointer-events: none;
+  transition: 
+    opacity .5s, 
+    transform .5s .5s;
+}
+
+.level-7-waterrod.eruit { 
+  opacity: 1;
+  transform: translateY(-11em);
+}
+
+/* buttons uitleg */
+
+.level-7-uitleg-1 { 
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: .5em solid green;
+  border-radius: .5em;
+  box-shadow: inset 0 0 10px white;
+  width: 30em;
+  height: 25em;
+  left: 15em;
+  bottom: 14.5em;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.level-7-uitleg-1.aan { 
+  opacity: 1;
+}
+
+.level-7-uitleg-2 { 
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: .5em solid green;
+  border-radius: .5em;
+  box-shadow: inset 0 0 10px white;
+  width: 30em;
+  height: 25em;
+  left: 15em;
+  bottom: 5em;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.level-7-uitleg-2.aan { 
+  opacity: 1;
+}
+
+.level-7-uitleg-knop-1 { 
+  position: absolute;
+  display: grid;
+  width:9em;
+  height:9em;
+  background-image:url("../images/link-7.png");
+  background-size: cover; 
+  background-color: black;
+  box-shadow: inset 0 0 30px black;
+  border-radius: 50%;
+  border: 0em;
+  top: 16.5em;
+  left: 6em;
+}
+
+.level-7-uitleg-knop-2 { 
+  position: absolute;
+  display: grid;
+  width:9em;
+  height:9em;
+  background-image:url("../images/level\ 3-kist.png");
+  background-size: cover;
+  background-color: black;
+  box-shadow: inset 0 0 30px black;
+  border-radius: 50%;
+  border: 0em;
+  bottom: 16.5em;
+  left: 6em;
+}
+
+
+
+
+
+/***************
+****level 8*****
+***************/
+/* button link */
+.level-8-link {
+  width: 4.3em;
+}
+
+.level-8-button2 { 
+  position: absolute;
+  top:10em;
+  right: 56em;
+  width: 3.125em;
+  pointer-events: none;
+  background: none;
+  background-color: none;
+  border: 0;
+}
+
+.level-8-button2.aan { 
+  pointer-events: all;
+  animation-duration: 4s;
+}
+
+.level-8-button2.lopen { 
+  pointer-events: all;
+  transition-duration: 2s;
+  transform: translateY(27em);
+}
+
+.level-8-waterrod { 
+  width: 3em;
+}
+
+.level-8-button { 
+  position: absolute;
+  width: 0.5em;
+  background: none;
+  background-color: none;
+  border: 0;
+  top: 11.9em;
+  right:55em;
+}
+
+.level-8-enemy { 
+  position: absolute;
+  bottom: 9em;
+  width: 16em;
+  left: 39em;
+}
+
+.level-8-enemy.defeated { 
+  animation-name: disappear2;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+}
+
+@keyframes disappear2 { 
+  0% { 
+    opacity: 1;
+  }
+  75% { 
+    opacity: 1;
+  } 
+  100% { 
+    opacity: 0;
+  }
+}
+
+.level-8-projectile { 
+  position: absolute;
+  top: 10em;
+  width: 3em;
+  opacity: 0;
+}
+
+.level-8-projectile.fly { 
+  animation-name: shoot2;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+}
+
+@keyframes shoot2 { 
+  0% { 
+    transform: translatey(0em);
+    opacity: 0;
+  }
+  75% { 
+    transform: translatey(18em);
+    opacity: 1;
+  } 
+  100% { 
+  transform: translatey(18em);
+  opacity: 0;
+  }
+}
+
+/* buttons uitleg */
+
+.level-8-uitleg-1 { 
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: .5em solid green;
+  border-radius: .5em;
+  box-shadow: inset 0 0 10px white;
+  width: 30em;
+  height: 25em;
+  left: 15em;
+  bottom: 14.5em;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.level-8-uitleg-1.aan { 
+  opacity: 1;
+}
+
+.level-8-uitleg-2 { 
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: .5em solid green;
+  border-radius: .5em;
+  box-shadow: inset 0 0 10px white;
+  width: 30em;
+  height: 25em;
+  left: 15em;
+  bottom: 5em;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.level-8-uitleg-2.aan { 
+  opacity: 1;
+}
+
+.level-8-uitleg-knop-1 { 
+  position: absolute;
+  display: grid;
+  width:9em;
+  height:9em;
+  background-image:url("../images/link-8.png");
+  background-size: cover; 
+  background-color: black;
+  box-shadow: inset 0 0 30px black;
+  border-radius: 50%;
+  border: 0em;
+  top: 16.5em;
+  left: 6em;
+}
+
+.level-8-uitleg-knop-2 { 
+  position: absolute;
+  display: grid;
+  width:9em;
+  height:9em;
+  background-image:url("../images/level-8-enemy.png");
+  background-size: cover;
+  background-color: black;
+  box-shadow: inset 0 0 30px black;
+  border-radius: 50%;
+  border: 0em;
+  bottom: 16.5em;
+  left: 6em;
+}
+
+
+
+
+
+/***************
+****level 9*****
+***************/
+
+.level-9-link {
+  position: absolute;
+  width: 4.5em;
+  top: 9em;
+}
+
+.level-9-link.jump {
+  animation-name: jump;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+}
+
+@keyframes jump { 
+  0% { 
+    transform: translatey(0em);
+  }
+  50% { 
+    transform: translatey(9em) scale(2);
+  } 
+  100% { 
+    transform: translatey(18em) scale(1);
+  }
+}
+
+.level-9-boots {
+  width: 5.5em;
+}
+
+.level-9-button { 
+  position: absolute;
+  top: 8em;
+  left: 6em;
+  background: none;
+  background-color: none;
+  border: 0;
+  transition-duration: .5s;
+}
+
+.level-9-button.fade-out { 
+  opacity: 0;
+}
+
+
+.level-9-kist {
+  position: absolute;
+  bottom: 4em;
+  right:4em;
+  width: 11em;
+}
+
+.level-9-bosskey {
+  position: absolute;
+  bottom: 6em;
+  right:6em;
+  width: 4em;
+}
+
+/* buttons uitleg */
+
+.level-9-uitleg-1 { 
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: .5em solid green;
+  border-radius: .5em;
+  box-shadow: inset 0 0 10px white;
+  width: 30em;
+  height: 25em;
+  left: 15em;
+  bottom: 14.5em;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.level-9-uitleg-1.aan { 
+  opacity: 1;
+}
+
+.level-9-uitleg-2 { 
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: .5em solid green;
+  border-radius: .5em;
+  box-shadow: inset 0 0 10px white;
+  width: 30em;
+  height: 25em;
+  left: 15em;
+  bottom: 5em;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.level-9-uitleg-2.aan { 
+  opacity: 1;
+}
+
+.level-9-uitleg-knop-1 { 
+  position: absolute;
+  display: grid;
+  width:9em;
+  height:9em;
+  background-image:url("../images/link-9.png");
+  background-size: cover; 
+  background-color: black;
+  box-shadow: inset 0 0 30px black;
+  border-radius: 50%;
+  border: 0em;
+  top: 16.5em;
+  left: 6em;
+}
+
+.level-9-uitleg-knop-2 { 
+  position: absolute;
+  display: grid;
+  width:9em;
+  height:9em;
+  background-image:url("../images/level-9-boots.png");
+  background-size: cover;
+  background-color: black;
+  box-shadow: inset 0 0 30px black;
+  border-radius: 50%;
+  border: 0em;
+  bottom: 16.5em;
+  left: 6em;
+}
+
+
+
+
+
+/***************
+****level 10*****
+***************/
+/* button link */
+.level-10-link {
+  width: 3em;
+}
+
+.level-10-button { 
+  position: absolute;
+  top:8em;
+  right: 56em;
+  width: 3.125em;
+  background: none;
+  background-color: none;
+  border: 0;
+}
+
+.level-10-button.lopen { 
+  transition-duration: 2s;
+  transform: translateY(28em);
+}
+
+/* buttons uitleg */
+
+.level-10-uitleg-1 { 
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: .5em solid green;
+  border-radius: .5em;
+  box-shadow: inset 0 0 10px white;
+  width: 30em;
+  height: 25em;
+  left: 15em;
+  bottom: 14.5em;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.level-10-uitleg-1.aan { 
+  opacity: 1;
+}
+
+.level-10-uitleg-2 { 
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: .5em solid green;
+  border-radius: .5em;
+  box-shadow: inset 0 0 10px white;
+  width: 30em;
+  height: 25em;
+  left: 15em;
+  bottom: 5em;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.level-10-uitleg-2.aan { 
+  opacity: 1;
+}
+
+.level-10-uitleg-knop-1 { 
+  position: absolute;
+  display: grid;
+  width:9em;
+  height:9em;
+  background-image:url("../images/link-10.png");
+  background-size: cover; 
+  background-color: black;
+  box-shadow: inset 0 0 30px black;
+  border-radius: 50%;
+  border: 0em;
+  top: 16.5em;
+  left: 6em;
+}
+
+.level-10-uitleg-knop-2 { 
+  position: absolute;
+  display: grid;
+  width:9em;
+  height:9em;
+  background-image:url("../images/level-1-vuur.png");
+  background-size: cover;
+  background-color: black;
+  box-shadow: inset 0 0 30px black;
+  border-radius: 50%;
+  border: 0em;
+  bottom: 16.5em;
+  left: 6em;
+}
+
+
+
+
+
+/***************
+****level 11*****
+***************/
+.level-11-link {
+  position: absolute;
+  top: 18.5em;
+  left: 25em;
+  width: 7em;
+}
+
+.level-11-link.lopen { 
+  pointer-events: all;
+  animation-name: loop11;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-delay: 1.3s;
+}
+
+@keyframes loop11 { 
+  0% { 
+    transform: translatex(0em) translatey(0em);
+  }
+  50% { 
+    transform: translatex(20em)
+  } 
+  100% { 
+    transform: translatex(20em) translatey(14em);
+  }
+}
+
+.level-11-boss { 
+  position: absolute;
+  top: 16em;
+  right: 21em;
+  width: 18em;
+  transition-duration: 1s;
+  transition-delay: 1s;
+}
+
+.level-11-boss.defeated { 
+  opacity: 0;
+}
+
+/* button bow */
+.level-11-bow { 
+  width: 4em;
+}
+
+.level-11-button { 
+  position: absolute;
+  top: 25em;
+  left:35em;
+  width: 0.5em;
+  background: none;
+  background-color: none;
+  border: 0;
+  transition: 1s;
+  transition-delay: 1s;
+}
+
+.level-11-button.fade-out { 
+  opacity: 0;
+  pointer-events: none;
+}
+
+.level-11-arrow { 
+  position: absolute;
+  top: 22em;
+  left:25em;
+  width: 3em;
+}
+
+.level-11-arrow.fly { 
+  animation-name: shoot11;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+}
+
+@keyframes shoot11 { 
+  0% { 
+    transform: translatex(0em);
+  }
+  75% { 
+    transform: translatex(41em);
+    opacity: 1;
+  
+  } 
+  100% { 
+    transform: translatex(41em);
+    opacity: 0;
+  }
+}
+
+/* button waterrod */
+.level-8-waterrod { 
+  width: 4em;
+}
+
+.level-11-button2 { 
+  position: absolute;
+  width: 0.5em;
+  top: 25em;
+  left:35em;
+  background: none;
+  background-color: none;
+  border: 0;
+  opacity: 0;
+  transition-duration: 1s;
+  transition-delay: 1s;
+}
+
+.level-11-button2.aan { 
+  opacity: 1;
+}
+
+.level-11-button2.fade-out { 
+  opacity: 0;
+}
+
+.level-11-projectile { 
+  position: absolute;
+  top: 21.5em;
+  left:26.5em;
+  width: 2.5em;
+  opacity: 0;
+}
+
+.level-11-projectile.fly { 
+  animation-name: shoot112;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+}
+
+@keyframes shoot112 { 
+  0% { 
+    transform: translatex(0em);
+    opacity: 1;
+  }
+  75% { 
+    transform: translatex(41em);
+    opacity: 1;
+  } 
+  100% { 
+    transform: translatex(41em);
+    opacity: 0;
+  }
+}
+
+
+.level-11-heart-1 { 
+  right: 24.5em;
+  position: absolute;
+  top: 9em;
+  width: 3.5em;
+  transition-duration: .5s;
+  transition-delay: .5s;
+}
+
+.level-11-heart-1.dood { 
+  opacity: 0;
+}
+
+.level-11-heart-2 { 
+  right: 29em;
+  position: absolute;
+  top: 9em;
+  width: 3.5em;
+  transition-duration: .5s;
+  transition-delay: .5s;
+}
+
+.level-11-heart-2.dood { 
+  opacity: 0;
+  
+}
+
+.level-11-heart-3 { 
+  right: 33.5em;
+  position: absolute;
+  top: 9em;
+  width: 3.5em;
+  transition-duration: .5s;
+  transition-delay: .5s;
+}
+
+.level-11-heart-3.dood { 
+  opacity: 0;
+}
+
+.level-11-heart-4 { 
+  right: 38em;
+  position: absolute;
+  top: 9em;
+  width: 3.5em;
+  transition-duration: .5s;
+  transition-delay: .5s;
+}
+
+.level-11-heart-4.dood { 
+  opacity: 0;
+}
+
+.level-11-heart-5 { 
+  right: 20em;
+  position: absolute;
+  top: 9em;
+  width: 3.5em;
+  transition-duration: .5s;
+  transition-delay: .5s;
+}
+
+.level-11-heart-5.dood { 
+  opacity: 0;
+}
+
+/* buttons uitleg */
+
+.level-11-uitleg-1 { 
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: .5em solid green;
+  border-radius: .5em;
+  box-shadow: inset 0 0 10px white;
+  width: 30em;
+  height: 25em;
+  left: 15em;
+  bottom: 14.5em;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.level-11-uitleg-1.aan { 
+  opacity: 1;
+}
+
+.level-11-uitleg-2 { 
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: .5em solid green;
+  border-radius: .5em;
+  box-shadow: inset 0 0 10px white;
+  width: 30em;
+  height: 25em;
+  left: 15em;
+  bottom: 5em;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.level-11-uitleg-2.aan { 
+  opacity: 1;
+}
+
+.level-11-uitleg-knop-1 { 
+  position: absolute;
+  display: grid;
+  width:9em;
+  height:9em;
+  background-image:url("../images/link-11.png");
+  background-size: cover; 
+  background-color: black;
+  box-shadow: inset 0 0 30px black;
+  border-radius: 50%;
+  border: 0em;
+  top: 16.5em;
+  left: 6em;
+}
+
+.level-11-uitleg-knop-2 { 
+  position: absolute;
+  display: grid;
+  width:9em;
+  height:9em;
+  background-image:url("../images/level-11-boss.png");
+  background-size: cover;
+  background-color: black;
+  box-shadow: inset 0 0 30px black;
+  border-radius: 50%;
+  border: 0em;
+  bottom: 16.5em;
+  left: 6em;
+}
+
+.start-1 { 
+  right: 19.5em;
+  color: white;
+  font-weight: lighter;
+}
+
+
+
+
+
+
+
