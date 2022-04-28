@@ -2,32 +2,24 @@
 console.log("Howdy!");
 console.log("test");
 
-// var button = document.querySelector('button');
-// var box = document.getElementById('changeme');
 
+// ***********************
+// level 1 animation
+// ***********************
 
-// button.onclick = function changeColor(){ 
-//     if(box.style.background == 'red') { 
-//         box.style.background = 'blue';
-//     }
-//     else{ 
-//         box.style.background = 'red'
-//     }
-// }
-
+// fire
 var lever = document.getElementsByClassName('button-lever');
 var vuur = document.getElementsByClassName('level-1-vuur');
 
-// Set (initialize) all vuur opacity to 1
+
 for (var i = 0; i < vuur.length; i++) {
     vuur[i].style.opacity = 1;
 }
 
 function level1_lever_click(){ 
-    // For all "level-1-vuur" classes
+
     for (var i = 0; i < vuur.length; i++) {
 
-        // console.log(i + "=" + vuur[i].style.opacity);
 
         if(vuur[i].style.opacity == 1 ) { 
             console.log(i + "active");
@@ -41,17 +33,21 @@ function level1_lever_click(){
     }
 }
 
+// knop welke link is dit?
 function level1_button2(){ 
     var text = document.querySelector('.home-uitleg-1');
     
     text.classList.toggle("aan");
 }
 
+// knop welke item is dit?
 function level1_button3(){ 
     var text = document.querySelector('.home-uitleg-2');
     
     text.classList.toggle("aan");
 }
+
+//link lopen
 
 function level1_button(){ 
     var link = document.querySelector('.level-1-button');
@@ -62,16 +58,19 @@ function level1_button(){
 
 
 
+// ***********************
+// level 2 animation
+// ***********************
+
+//link lopen
 function level2_button(){ 
     var link2 = document.querySelector('.level-2-button');
-    // var gate = document.querySelector('gate-donker-up gate-donker-up-2');
    
     link2.classList.add("lopen");
-    // gate.classList.add("aan");
+
 }
 
-
-
+//blok naar beneden
 function level2_button2(){ 
     var button2 = document.querySelector('.level-2-button2');
     var link2 = document.querySelector('.level-2-button');
@@ -80,18 +79,28 @@ function level2_button2(){
     link2.classList.add("aan");
 }
 
+// knop welke link is dit?
 function level2_button3(){ 
     var text = document.querySelector('.level-2-uitleg-1');
     
     text.classList.toggle("aan");
 }
 
+// knop welk item is dit?
 function level2_button4(){ 
     var text = document.querySelector('.level-2-uitleg-2');
     
     text.classList.toggle("aan");
 }
 
+
+
+
+// ***********************
+// level 3 animation
+// ***********************
+
+// knop kist animatie
 function level3_chest(){ 
     var button3 = document.querySelector('.level-3-button');
     var kistopen = document.querySelector('.level-3-kist-open');
@@ -104,6 +113,7 @@ function level3_chest(){
     link3.classList.add("aan");
 }
 
+// knop welke link is dit?
 function level3_link(){ 
     var link3 = document.querySelector('.level-3-button2');
   
@@ -122,6 +132,11 @@ function level3_button2(){
     text.classList.toggle("aan");
 }
 
+
+
+// ***********************
+// level 4 animation
+// ***********************
 function level4_bow(){ 
     var arrow = document.querySelector('.level-4-arrow');
     var enemy = document.querySelector('.level-4-enemy');
@@ -150,6 +165,11 @@ function level4_button2(){
     text.classList.toggle("aan");
 }
 
+
+
+// ***********************
+// level 5 animation
+// ***********************
 function level5_chest(){ 
     var button5 = document.querySelector('.level-5-button');
     console.log(button5);
@@ -193,6 +213,10 @@ function level5_button2(){
 }
 
 
+
+// ***********************
+// level 6 animation
+// ***********************
 function level6_bomb(){ 
     var button6 = document.querySelector('.level-6-button');
     console.log(button6);
@@ -235,6 +259,11 @@ function level6_button2(){
     text.classList.toggle("aan");
 }
 
+
+
+// ***********************
+// level 7 animation
+// ***********************
 function level7_chest(){ 
     var button7 = document.querySelector('.level-7-button');
     console.log(button7);
@@ -266,6 +295,11 @@ function level7_button2(){
     text.classList.toggle("aan");
 }
 
+
+
+// ***********************
+// level 8 animation
+// ***********************
 function level8_waterrod(){ 
     var projectile = document.querySelector('.level-8-projectile');
     var enemy2 = document.querySelector('.level-8-enemy');
@@ -294,6 +328,11 @@ function level8_button2(){
     text.classList.toggle("aan");
 }
 
+
+
+// ***********************
+// level 9 animation
+// ***********************
 function level9_flyingboots(){ 
     var button9 = document.querySelector('.level-9-button');
     var link9 = document.querySelector('.level-9-link');
@@ -320,6 +359,11 @@ function level10_link(){
     link10.classList.add("lopen");
 }
 
+
+
+// ***********************
+// level 10 animation
+// ***********************
 function level10_button(){ 
     var text = document.querySelector('.level-10-uitleg-1');
     
@@ -327,6 +371,10 @@ function level10_button(){
 }
 
 
+
+// ***********************
+// level 11 animation
+// ***********************
 function level11_bow(){ 
     var arrow = document.querySelector('.level-11-arrow');
     var bow = document.querySelector('.level-11-button');
